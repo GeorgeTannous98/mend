@@ -10,17 +10,17 @@ import utils.CmdResult;
 import utils.PathUtils;
 
 public class SignUrlTest extends BaseStorageTest {
-//
-//    @BeforeClass
-//    public void setup() throws Exception {
-//        String filePath = PathUtils.getTestResourcePath("storage/login.html");
-//        gsc.uploadFile(bucketName, filePath);
-//    }
 
-//    @AfterClass
-//    public void cleanUp() {
-//        gsc.removeFile(bucketName, "login.html");
-//    }
+    @BeforeClass
+    public void setup() throws Exception {
+        String filePath = PathUtils.getTestResourcePath("storage/login.html");
+        gsc.uploadFile(bucketName, filePath);
+    }
+
+    @AfterClass
+    public void cleanUp() {
+        gsc.removeFile(bucketName, "login.html");
+    }
 
     @Test
     public void signUrlTest() throws Exception {
@@ -40,7 +40,17 @@ public class SignUrlTest extends BaseStorageTest {
             Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(true));
             Page page = browser.newPage();
             page.navigate(signedUrl);
-            page.content();
+            String content = page.content();
+            String expectedContent = "<html><head></head><body>\n" +
+                    "<form action=\"https://example.com\">\n" +
+                    "    <input type=\"text\" name=\"email\">\n" +
+                    "    <input type=\"password\" name=\"password\">\n" +
+                    "    <button type=\"submit\">Login</button>\n" +
+                    "</form>\n" +
+                    "\n" +
+                    "</body></html>";
+
+            Assert.assertEquals(content, expectedContent);
         }
 
     }

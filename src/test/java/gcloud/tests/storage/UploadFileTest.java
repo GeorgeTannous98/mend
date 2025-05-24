@@ -10,7 +10,7 @@ import utils.PathUtils;
 
 public class UploadFileTest extends BaseStorageTest {
     @AfterClass
-    public void cleanUp() throws Exception {
+    public void cleanUp() {
         gsc.removeFile(bucketName, "number.txt");
     }
 

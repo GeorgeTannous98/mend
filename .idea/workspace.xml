@@ -4,28 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1e5e229-18ca-4e5b-8168-de5b4b92e2cb" name="Changes" comment="Add playwright">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/CmdResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/CommandExecutor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/gcloud/storage/GcloudStorageCommands.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/gcloud/base/BaseStorageTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/gcloud/tests/storage/HashFileTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/gcloud/tests/storage/RenameTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/gcloud/tests/storage/SignUrlTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/gcloud/tests/storage/UploadFileTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/PathUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/storage/hashedFile.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/storage/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/storage/number.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/storage/renameTest.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/suites/StorageTestSuite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="c1e5e229-18ca-4e5b-8168-de5b4b92e2cb" name="Changes" comment="Almost done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/gcloud/tests/storage/SignUrlTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gcloud/tests/storage/SignUrlTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/gcloud/tests/storage/UploadFileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gcloud/tests/storage/UploadFileTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -277,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1747832770648</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Almost done">
+      <created>1748109546865</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1748109546865</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -293,7 +282,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add playwright" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add playwright" />
+    <MESSAGE value="Almost done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Almost done" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
