@@ -1,0 +1,10 @@
+<suite name="GCloud Storage Suite" parallel="classes" thread-count="4">
+    <test name="Storage Command Tests">
+        <classes>
+            <class name="gcloud.tests.storage.HashFileTest"/>
+            <class name="gcloud.tests.storage.RenameTest"/>
+            <class name="gcloud.tests.storage.SignUrlTest"/>
+            <class name="gcloud.tests.storage.UploadFileTest"/>
+        </classes>
+    </test>
+</suite>

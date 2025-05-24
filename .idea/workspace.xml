@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1e5e229-18ca-4e5b-8168-de5b4b92e2cb" name="Changes" comment="">
+    <list default="true" id="c1e5e229-18ca-4e5b-8168-de5b4b92e2cb" name="Changes" comment="Add playwright">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/CmdResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/CommandExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/gcloud/storage/GcloudStorageCommands.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/gcloud/base/BaseStorageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/gcloud/tests/storage/HashFileTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/gcloud/tests/storage/RenameTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/gcloud/tests/storage/SignUrlTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/gcloud/tests/storage/UploadFileTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/utils/PathUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/storage/hashedFile.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/storage/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/storage/number.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/storage/renameTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/suites/StorageTestSuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -15,6 +34,14 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -29,7 +56,9 @@
     <option name="version" value="2" />
   </component>
   <component name="ProjectId" id="2xP9uWZF9PmpXuapklXx0WZi8tU" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -38,14 +67,43 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Gorge/IdeaProjects/mend/src/test&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Gorge\IdeaProjects\mend\src\test" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Gorge\IdeaProjects\mend\src\test\resources\storage" />
+      <recent name="C:\Users\Gorge\IdeaProjects\mend\src\test\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.SignUrlTest.signUrlTest">
     <configuration name="mend [clean,install]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
+        <option name="myRunnerSettings">
+          <MavenRunnerSettings>
+            <option name="delegateBuildToMaven" value="false" />
+            <option name="environmentProperties">
+              <map />
+            </option>
+            <option name="jreName" value="#USE_PROJECT_JDK" />
+            <option name="mavenProperties">
+              <map />
+            </option>
+            <option name="passParentEnv" value="true" />
+            <option name="runMavenInBackground" value="true" />
+            <option name="skipTests" value="true" />
+            <option name="vmOptions" value="" />
+          </MavenRunnerSettings>
+        </option>
         <option name="myRunnerParameters">
           <MavenRunnerParameters>
             <option name="profiles">
@@ -68,6 +126,140 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <configuration name="mend [clean,test]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="test" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="HashFileTest.fileHashingTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="mend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gcloud.tests.storage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="gcloud.tests.storage" />
+      <option name="MAIN_CLASS_NAME" value="gcloud.tests.storage.HashFileTest" />
+      <option name="METHOD_NAME" value="fileHashingTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RenameTest.moveFileTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="mend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gcloud.tests.storage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="gcloud.tests.storage" />
+      <option name="MAIN_CLASS_NAME" value="gcloud.tests.storage.RenameTest" />
+      <option name="METHOD_NAME" value="moveFileTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RenameTest.testListBuckets" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="mend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gcloud.tests.storage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="gcloud.tests.storage" />
+      <option name="MAIN_CLASS_NAME" value="gcloud.tests.storage.RenameTest" />
+      <option name="METHOD_NAME" value="testListBuckets" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SignUrlTest.signUrlTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="mend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gcloud.tests.storage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="gcloud.tests.storage" />
+      <option name="MAIN_CLASS_NAME" value="gcloud.tests.storage.SignUrlTest" />
+      <option name="METHOD_NAME" value="signUrlTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SignUrlTest.testSignUrlAccessibility" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="mend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gcloud.tests.storage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="gcloud.tests.storage" />
+      <option name="MAIN_CLASS_NAME" value="gcloud.tests.storage.SignUrlTest" />
+      <option name="METHOD_NAME" value="testSignUrlAccessibility" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Maven.mend [clean,test]" />
+      <item itemvalue="Maven.mend [clean,install]" />
+      <item itemvalue="TestNG.SignUrlTest.signUrlTest" />
+      <item itemvalue="TestNG.HashFileTest.fileHashingTest" />
+      <item itemvalue="TestNG.RenameTest.moveFileTest" />
+      <item itemvalue="TestNG.RenameTest.testListBuckets" />
+      <item itemvalue="TestNG.SignUrlTest.testSignUrlAccessibility" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.SignUrlTest.signUrlTest" />
+        <item itemvalue="TestNG.HashFileTest.fileHashingTest" />
+        <item itemvalue="TestNG.RenameTest.moveFileTest" />
+        <item itemvalue="TestNG.RenameTest.testListBuckets" />
+        <item itemvalue="TestNG.SignUrlTest.testSignUrlAccessibility" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -78,6 +270,14 @@
       <option name="presentableId" value="Default" />
       <updated>1747829068363</updated>
     </task>
+    <task id="LOCAL-00001" summary="Add playwright">
+      <created>1747832770648</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1747832770648</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -90,5 +290,20 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add playwright" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add playwright" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="TestNG">
+        <watch expression="res.stderr.hash" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

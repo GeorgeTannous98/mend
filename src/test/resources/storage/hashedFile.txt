@@ -1,0 +1,2 @@
+Hashing this file
+I want this file to be hashed :).
