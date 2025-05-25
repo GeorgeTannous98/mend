@@ -16,9 +16,9 @@ It uses Java, TestNG, and Maven to automate and verify command-line operations a
   2. cd mend
      
 **2. Configure Google Cloud**
-    1. gcloud auth login
-    2. gcloud config set project [YOUR_PROJECT_ID]
-    
+  1. gcloud auth login.
+  2. gcloud config set project [YOUR_PROJECT_ID] 
+      
 **3. Build the project and run the tests using Maven**   
   1. mvn clean install -DskipTests
   2. mvn test -DsuiteXmlFile="src/test/resources/suites/gcloud-storage-suite.xml"
