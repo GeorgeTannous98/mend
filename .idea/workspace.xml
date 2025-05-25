@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1e5e229-18ca-4e5b-8168-de5b4b92e2cb" name="Changes" comment="Almost complete">
+    <list default="true" id="c1e5e229-18ca-4e5b-8168-de5b4b92e2cb" name="Changes" comment="Completed Project">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/gcloud/storage/GcloudStorageCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/gcloud/storage/GcloudStorageCommands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/gcloud/base/BaseStorageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gcloud/base/BaseStorageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/gcloud/tests/storage/UploadFileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gcloud/tests/storage/UploadFileTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -288,7 +287,14 @@
       <option name="project" value="LOCAL" />
       <updated>1748137461522</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Completed Project">
+      <created>1748177127751</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1748177127751</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -306,7 +312,8 @@
     <MESSAGE value="Add playwright" />
     <MESSAGE value="Almost done" />
     <MESSAGE value="Almost complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="Almost complete" />
+    <MESSAGE value="Completed Project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed Project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -21,8 +21,6 @@ public class UploadFileTest extends BaseStorageTest {
         gsc.uploadFile(bucketName, testFile);
 
         CmdResult cmd = gsc.listBucket(bucketName);
-        String stdout = cmd.getStdout();
-        String[] path = stdout.split("/");
 
         Assert.assertTrue(cmd.isSuccess());
         Assert.assertTrue(cmd.getStdout().contains("number.txt"));
