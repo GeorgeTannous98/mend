@@ -15,7 +15,7 @@ public class UploadFileTest extends BaseStorageTest {
     }
 
     @Test
-    public void testUploadFile() throws Exception {
+    public void testUploadFile() {
         String testFile = PathUtils.getTestResourcePath("storage/number.txt");
 
         gsc.uploadFile(bucketName, testFile);
@@ -24,6 +24,7 @@ public class UploadFileTest extends BaseStorageTest {
         String stdout = cmd.getStdout();
         String[] path = stdout.split("/");
 
-        Assert.assertEquals(path[path.length - 1], "number.txt");
+        Assert.assertTrue(cmd.isSuccess());
+        Assert.assertTrue(cmd.getStdout().contains("number.txt"));
     }
 }

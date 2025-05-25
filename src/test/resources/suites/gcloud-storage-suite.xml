@@ -1,5 +1,6 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="GCloud Storage Suite" parallel="classes" thread-count="4">
-    <test name="Storage Command Tests">
+    <test name= "GCloud Storage Command Tests">
         <classes>
             <class name="gcloud.tests.storage.HashFileTest"/>
             <class name="gcloud.tests.storage.RenameTest"/>

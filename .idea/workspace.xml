@@ -6,8 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="c1e5e229-18ca-4e5b-8168-de5b4b92e2cb" name="Changes" comment="Almost done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/gcloud/storage/GcloudStorageCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/gcloud/storage/GcloudStorageCommands.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/gcloud/tests/storage/SignUrlTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gcloud/tests/storage/SignUrlTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/gcloud/tests/storage/UploadFileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gcloud/tests/storage/UploadFileTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/suites/StorageTestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/suites/gcloud-storage-suite.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +69,7 @@
       <recent name="C:\Users\Gorge\IdeaProjects\mend\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.SignUrlTest.signUrlTest">
+  <component name="RunManager" selected="Maven.mend [clean,install]">
     <configuration name="mend [clean,install]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -266,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1748109546865</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Almost done">
+      <created>1748127858798</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1748127858798</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

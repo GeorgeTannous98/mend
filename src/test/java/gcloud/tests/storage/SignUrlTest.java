@@ -12,7 +12,7 @@ import utils.PathUtils;
 public class SignUrlTest extends BaseStorageTest {
 
     @BeforeClass
-    public void setup() throws Exception {
+    public void setup() {
         String filePath = PathUtils.getTestResourcePath("storage/login.html");
         gsc.uploadFile(bucketName, filePath);
     }
@@ -36,6 +36,7 @@ public class SignUrlTest extends BaseStorageTest {
             throw new Exception(msg);
         }
 
+        // ensure that signed URLs are actually accessible and do not trigger phishing warnings.
         try (Playwright playwright = Playwright.create()) {
             Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(true));
             Page page = browser.newPage();

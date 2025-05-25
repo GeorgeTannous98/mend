@@ -10,7 +10,7 @@ import utils.PathUtils;
 
 public class HashFileTest extends BaseStorageTest {
     @BeforeClass
-    public void setup() throws Exception {
+    public void setup() {
         String filePath = PathUtils.getTestResourcePath("storage/hashedFile.txt");
         gsc.uploadFile(bucketName, filePath);
     }
