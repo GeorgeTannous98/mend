@@ -1,31 +1,74 @@
-## Objective 
-This project provides a modular and scalable test framework with readable code for validating Google Cloud Storage CLI commands.
-It uses Java, TestNG, and Maven to automate and verify command-line operations across different environments.
+# ☁️ GCloud Storage CLI Automation Framework
 
-The 4 CLI gcloud storage commands I tested are: **hash**, **cp**, **sign-url** and **mv**.
+An automation testing framework built in **Java**, using **TestNG** and **Docker**, designed to validate the behavior and output of `gcloud storage` CLI commands. The framework is extendable, scalable, and supports testing across multiple versions of the Google Cloud SDK (gcloud CLI).
 
-## Requirements 
-1. Java 11 or higher
-2. Maven 3.6+
-3. Google Cloud SDK installed and authenticated (gcloud auth login)
-4. GCP account and a created empty bucket (called mend-bucket)
-5. Creating an impersonated service account and giving it Storage Object Viewer role.
+### ✅ Key Features
+- Automated testing for `gcloud storage` commands including `sign-url`, `upload`, `hash`, and `rename`.
+- Tests run independently and in parallel (via TestNG).
+- Supports multiple gcloud versions via Docker build arguments.
+- Validates signed URLs for accessibility and phishing safety using Playwright Chromium.
+- Framework designed for extensibility (easy to add more commands and suites).
 
-## How to Run
-**1. Clone the project** 
-  1. git clone https://github.com/GeorgeTannous98/mend.git
-  2. cd mend
-     
-**2. Configure Google Cloud**
-  1. gcloud auth login.
-  2. gcloud config set project [YOUR_PROJECT_ID] 
-      
-**3. Build the project and run the tests using Maven**   
+---
+## 🔧 Requirements
 
-Run the following commands on the terminal:
-  1. mvn clean install -DskipTests
-  2. mvn test -DsuiteXmlFile="src/test/resources/suites/gcloud-storage-suite.xml"
+Before running the tests, ensure you have the following:
 
-**Note: In the class BaseStorageTest (src/test/java/gcloud/base/BaseStorageTest.java) there is a protected variable "impersonatedAcc", change it to your own service account.**
+1. **Google Cloud Project** with billing enabled.
+2. **Google Cloud Service Account** with the following roles:
+   - Storage Admin *(for creating/deleting buckets and uploading files)*
+   - Service Account Token Creator *(for signing URLs)*
 
+3. **Service Account Key JSON file** downloaded locally (e.g., `gcloud-key.json`).
 
+4. **Pre-created Storage Bucket** (empty) — required for tests.
+   - Example bucket name: `mend-bucket`
+
+---
+## 🚀 How to Run
+
+### 1️⃣ Clone the Repo
+bash
+git clone https://github.com/GeorgeTannous98/mend.git \
+cd mend
+
+Add Your Service Account Key
+Place your downloaded service account key JSON file in the project root:
+/gcloud-key.json
+
+pass thsoe using -e in docker as environment variables.
+GCLOUD_BUCKET_NAME=mend-bucket
+GCLOUD_PROJECT_ID=your-project-id
+
+docker build -t gcloud-cli-tests .
+
+docker run \
+  -e GCLOUD_BUCKET_NAME=my-test-bucket \
+  -e GCLOUD_PROJECT_ID=your-project-id \
+  -v $PWD/gcloud-key.json:/app/gcloud-key.json \
+  gcloud-cli-tests
+
+can run a specific test suite
+docker run gcloud-cli-tests mvn test -DsuiteXmlFile=src/test/resources/suites/gcloud-storage-suite.xml
+
+or run a test group \
+docker run -e TEST_GROUP=upload gcloud-cli-tests mvn test -Dgroups=upload
+
+---
+
+Add test groups for finer control
+--
+
+:shield: Security & Phishing Check
+For sign-url tests, the framework uses Playwright Chromium to validate that the signed URL is accessible and not flagged as a phishing attempt.
+
+--
+
+:books: References \
+Google Cloud CLI Docs
+
+TestNG Official Docs
+
+Docker Docs
+
+Playwright Java Docs
