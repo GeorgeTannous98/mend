@@ -21,5 +21,7 @@ The 4 CLI gcloud storage commands I tested are: **hash**, **cp**, **sign-url** a
   2. gcloud config set project [YOUR_PROJECT_ID] 
       
 **3. Build the project and run the tests using Maven**   
+
+Run the following commands on the terminal:
   1. mvn clean install -DskipTests
   2. mvn test -DsuiteXmlFile="src/test/resources/suites/gcloud-storage-suite.xml"
