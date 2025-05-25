@@ -25,7 +25,7 @@ public class SignUrlTest extends BaseStorageTest {
     @Test
     public void signUrlTest() throws Exception {
 
-        CmdResult cmd = gsc.signUrl(bucketName, "login.html", impersonatedAcc);
+        CmdResult cmd = gsc.signUrl(bucketName, "login.html");
 
         String stdout = cmd.getStdout();
         String signedUrl = parseSignUrl(stdout);

@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1e5e229-18ca-4e5b-8168-de5b4b92e2cb" name="Changes" comment="Almost complete">
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/gcloud/storage/GcloudAuthenticationCommands.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/suites/gcloud-storage-suite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/suites/gcloud-storage-suite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/gcloud/storage/GcloudStorageCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/gcloud/storage/GcloudStorageCommands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/gcloud/base/BaseStorageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gcloud/base/BaseStorageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/gcloud/tests/storage/SignUrlTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gcloud/tests/storage/SignUrlTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -279,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1748134159673</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Almost complete">
+      <created>1748137461522</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1748137461522</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

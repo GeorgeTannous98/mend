@@ -32,9 +32,8 @@ public class GcloudStorageCommands {
         return CommandExecutor.runCommand("gcloud", "storage", "mv", source, destination);
     }
 
-    public CmdResult signUrl(String bucketName, String fileName, String impersonatedAcc) {
-        return CommandExecutor.runCommand("gcloud", "storage", "sign-url", "gs://" + bucketName + "/" + fileName, "--duration=40s", "--impersonate-service-account=" +
-                impersonatedAcc, "--region=us-central1");
+    public CmdResult signUrl(String bucketName, String fileName) {
+        return CommandExecutor.runCommand("gcloud", "storage", "sign-url", "gs://" + bucketName + "/" + fileName, "--duration=5s", "--region=us-central1");
     }
 
     public CmdResult accessRole(String bucketName, String serviceAccount) {
