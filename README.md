@@ -87,7 +87,7 @@ Add test groups for finer control
 
 References
 
-[Google Cloud CLI Docs](https://cloud.google.com/sdk/docs)
-[TestNG Official Docs](https://testng.org/#_testng_documentation)
-[Docker Docs](https://docs.docker.com/reference/dockerfile/)
-[Playwright Java Docs](https://playwright.dev/java/docs/writing-tests)
+[Google Cloud CLI Docs](https://cloud.google.com/sdk/docs) \
+[TestNG Official Docs](https://testng.org/#_testng_documentation) \
+[Docker Docs](https://docs.docker.com/reference/dockerfile/) \
+[Playwright Java Docs](https://playwright.dev/java/docs/writing-tests) 
