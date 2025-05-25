@@ -32,62 +32,73 @@ Before running the tests, ensure you have the following:
 ## 🚀 How to Run
 
 ### 1️⃣ Clone the Repo
+```
 bash
 git clone https://github.com/GeorgeTannous98/mend.git \
 cd mend
-
+```
 #### Add Your Service Account Key
 Place your downloaded service account key JSON file in the project root:
 /gcloud-key.json or somewhere safe on your machine.
 which can be set using -v docker command
 
 #### Environment Variables
+```
 GCLOUD_STORAGE_BUCKET=<BUCKET_NAME> - NOTE: Defaults to "gcloud-storage-bucket"
 GCLOUD_PROJECT_ID=<YOUR-PROJECT-ID>
-
+```
 #### Running Docker
 
 Example docker build:
-
+```
 docker build . --build-arg GCLOUD_VERSION=523.0.1 -t gcloud-test:523.0.1
-
+```
 NOTE: according to Dockerfile we default to "latest" tag
-
+```
 docker run \
   -e GCLOUD_STORAGE_BUCKET=storage-bucket \
   -e GCLOUD_PROJECT_ID=projectId \
   -e GOOGLE_APPLICATION_CREDENTIALS=/app/gcloud-key.json
   -v <PATH FROM YOUR MACHINE>/gcloud-key.json:/app/gcloud-key.json \
   gcloud-cli-tests
-
-Example:
-
+```
+Example
+```
 docker run --rm -e GCLOUD_STORAGE_BUCKET=mend-bucket -e GCLOUD_PROJECT_ID=avid-garage-460619-q3 -e GOOGLE_APPLICATION_CREDENTIALS=/app/gcloud-key.json -v D:\github\mend\gcloud-key.json:/app/gcloud-key.json gcloud-test:523.0.1
-
+```
 
 Specific Test Suite 
 
-Example:
-
+Example
+```
 docker run --rm -e GCLOUD_STORAGE_BUCKET=mend-bucket -e GCLOUD_PROJECT_ID=avid-garage-460619-q3 -e GOOGLE_APPLICATION_CREDENTIALS=/app/gcloud-key.json -v D:\github\mend\gcloud-key.json:/app/gcloud-key.json gcloud-test:523.0.1 test -DsuiteXmlFile=src/test/resources/suites/gcloud-storage-suite.xml
-
+```
  
 Specific Group test 
 
 Example
-
+```
 docker run --rm -e GCLOUD_STORAGE_BUCKET=mend-bucket -e GCLOUD_PROJECT_ID=avid-garage-460619-q3 -e GOOGLE_APPLICATION_CREDENTIALS=/app/gcloud-key.json -v D:\github\mend\gcloud-key.json:/app/gcloud-key.json gcloud-test:523.0.1 test -Dgroups=hash
-
+```
 
 ---
 
-Add test groups for finer control
---
+## Creating new tests
+In order to add new commands other than `storage` add a new suite. \
+In order to add new sub-commands for a command add a new class for each command. 
 
+**References**
 
-References
+[Google Cloud CLI Docs](https://cloud.google.com/sdk/docs) 
 
-[Google Cloud CLI Docs](https://cloud.google.com/sdk/docs) \
-[TestNG Official Docs](https://testng.org/#_testng_documentation) \
-[Docker Docs](https://docs.docker.com/reference/dockerfile/) \
+[TestNG Official Docs](https://testng.org/#_testng_documentation) 
+
+[Docker Docs](https://docs.docker.com/reference/dockerfile/) 
+
 [Playwright Java Docs](https://playwright.dev/java/docs/writing-tests) 
+
+[Java Documentation](https://docs.oracle.com/en/java/). 
+
+[Google Cloud Storage Documentation](https://cloud.google.com/sdk/gcloud).
+
+[Apache Maven Official Site](https://maven.apache.org/).
