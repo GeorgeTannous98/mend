@@ -33,7 +33,7 @@ public class GcloudStorageCommands {
     }
 
     public CmdResult signUrl(String bucketName, String fileName) {
-        return CommandExecutor.runCommand("gcloud", "storage", "sign-url", "gs://" + bucketName + "/" + fileName, "--duration=5s", "--region=us-central1");
+        return CommandExecutor.runCommand("gcloud", "storage", "sign-url", "gs://" + bucketName + "/" + fileName, "--duration=30s", "--region=us-central1");
     }
 
     public CmdResult accessRole(String bucketName, String serviceAccount) {

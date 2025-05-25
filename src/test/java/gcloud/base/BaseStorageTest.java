@@ -35,8 +35,4 @@ public abstract class BaseStorageTest {
         auth.setProjectId(res2);
     }
 
-//    @AfterSuite(alwaysRun = true)
-//    public void tearDownSuite() {
-//
-//    }
 }
