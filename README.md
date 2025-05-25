@@ -25,3 +25,7 @@ The 4 CLI gcloud storage commands I tested are: **hash**, **cp**, **sign-url** a
 Run the following commands on the terminal:
   1. mvn clean install -DskipTests
   2. mvn test -DsuiteXmlFile="src/test/resources/suites/gcloud-storage-suite.xml"
+
+**Note: In the class BaseStorageTest (src/test/java/gcloud/base/BaseStorageTest.java) there is a protected variable "impersonatedAcc", change it to your own service account.**
+
+
