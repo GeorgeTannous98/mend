@@ -1,7 +1,8 @@
 ## Objective 
 This project provides a modular and scalable test framework with readable code for validating Google Cloud Storage CLI commands.
-It uses Java, TestNG, and Maven to automate and verify command-line operations across different environments. 
-*** The 4 CLI gcloud storage commands I tested are: **hash**, **cp**, **sign-url** and **mv**.
+It uses Java, TestNG, and Maven to automate and verify command-line operations across different environments.
+
+The 4 CLI gcloud storage commands I tested are: **hash**, **cp**, **sign-url** and **mv**.
 
 ## Requirements 
 1. Java 11 or higher
