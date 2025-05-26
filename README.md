@@ -44,8 +44,11 @@ which can be set using -v docker command
 
 #### Environment Variables
 ```
-GCLOUD_STORAGE_BUCKET=<BUCKET_NAME> - NOTE: Defaults to "gcloud-storage-bucket"
-GCLOUD_PROJECT_ID=<YOUR-PROJECT-ID>
+mvn clean install -DskipTests
+$env:GCLOUD_PROJECT_ID="<PROJECT_ID>"
+$env:GCLOUD_STORAGE_BUCKET="<BUCKET_NAME>"
+$env:GOOGLE_APPLICATION_CREDENTIALS="<SERVICE_ACCOUNT_JSON_FILE_PATH>"
+mvn test -DsuiteXmlFile="src/test/resources/suites/gcloud-storage-suite.xml"
 ```
 #### Running Docker
 
@@ -64,21 +67,21 @@ docker run \
 ```
 Example
 ```
-docker run --rm -e GCLOUD_STORAGE_BUCKET=mend-bucket -e GCLOUD_PROJECT_ID=avid-garage-460619-q3 -e GOOGLE_APPLICATION_CREDENTIALS=/app/gcloud-key.json -v D:\github\mend\gcloud-key.json:/app/gcloud-key.json gcloud-test:523.0.1
+docker run --rm -e GCLOUD_STORAGE_BUCKET=mend-bucket -e GCLOUD_PROJECT_ID=avid-garage-460619-q3 -e GOOGLE_APPLICATION_CREDENTIALS=/app/gcloud-key.json -v C:\github\mend\jsonKey.json:/app/gcloud-key.json gcloud-test:523.0.1
 ```
 
 Specific Test Suite 
 
 Example
 ```
-docker run --rm -e GCLOUD_STORAGE_BUCKET=mend-bucket -e GCLOUD_PROJECT_ID=avid-garage-460619-q3 -e GOOGLE_APPLICATION_CREDENTIALS=/app/gcloud-key.json -v D:\github\mend\gcloud-key.json:/app/gcloud-key.json gcloud-test:523.0.1 test -DsuiteXmlFile=src/test/resources/suites/gcloud-storage-suite.xml
+docker run --rm -e GCLOUD_STORAGE_BUCKET=mend-bucket -e GCLOUD_PROJECT_ID=avid-garage-460619-q3 -e GOOGLE_APPLICATION_CREDENTIALS=/app/gcloud-key.json -v C:\github\mend\jsonKey.json:/app/gcloud-key.json gcloud-test:523.0.1 test -DsuiteXmlFile=src/test/resources/suites/gcloud-storage-suite.xml
 ```
  
 Specific Group test 
 
 Example
 ```
-docker run --rm -e GCLOUD_STORAGE_BUCKET=mend-bucket -e GCLOUD_PROJECT_ID=avid-garage-460619-q3 -e GOOGLE_APPLICATION_CREDENTIALS=/app/gcloud-key.json -v D:\github\mend\gcloud-key.json:/app/gcloud-key.json gcloud-test:523.0.1 test -Dgroups=hash
+docker run --rm -e GCLOUD_STORAGE_BUCKET=mend-bucket -e GCLOUD_PROJECT_ID=avid-garage-460619-q3 -e GOOGLE_APPLICATION_CREDENTIALS=/app/gcloud-key.json -v C:\github\mend\jsonKey.json:/app/gcloud-key.json gcloud-test:523.0.1 test -Dgroups=hash
 ```
 
 ---
